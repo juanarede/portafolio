@@ -1,0 +1,165 @@
+body {
+    font-family: 'Oswald', sans-serif;
+    background-color: black;   
+}
+
+  
+.view {
+    background: url("./img/thumb-1920-238870.jpg") no-repeat center center;
+    background-size: cover;
+    background-attachment: fixed;
+    
+}
+.view::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 1) 17%, rgba(0, 212, 255, 0) 100%);
+  }
+@media (min-width: 768px) {
+    .view {
+        overflow: visible;
+        margin-top: -56px;
+    }
+
+}
+html,
+body,
+header,
+.view {
+  height: 105%;
+}
+
+.gris{
+    background:rgba(0, 0, 0, 0.199);
+}
+.top-nav-collapse {
+    background:rgba(209, 40, 201, 0.836) !important;
+}
+.about {
+    text-align: right;
+    padding-top: 1rem;
+}
+
+.skills {
+    margin: 0;
+}
+
+
+
+.con{
+    margin-top: 10%;
+}
+.card { 
+    position: relative;
+    overflow: hidden;
+}
+.card::before {
+    position: absolute;
+    content:'';
+    width: 90%;
+    height: 220%;
+    background: rgba(52, 50, 56, 0.7);
+    top:-50%;
+    left: -100%;
+    z-index: 1;
+    transform: rotate(25deg);
+    transform-origin: center top 0;
+    transition: .5s;
+}
+.card:hover::before {
+    left:10%
+}
+.card-image {
+    width: 150%;
+    height: auto;
+}
+.card-text{
+    width: 100%;
+    padding: 0 20px;
+    position:absolute;
+    top: -100%;
+    color:#fff;
+    left: 1;
+    z-index: 2;
+    transition: 1.1s;
+}
+.card:hover .card-text {
+    top: 40%;
+}
+.descripsion{
+    color: #ffff;
+    margin-top: 1rem;
+}
+
+.redes-container {
+    margin: 0;
+    padding: 0;
+    padding-top: 2rem;
+    padding-right: 3rem;
+    box-sizing: border-box;
+    display: flex;
+    height: 100vh;
+    
+    justify-content: center;
+    
+}
+.redes-container ul li {
+    display: inline-block;
+    margin: 0 5px;
+    width: 70px;
+    height: 70px;
+    text-align: center;
+}
+.redes-container ul li a {
+    display: block;
+    padding: 0 10px;
+    background-color: #333;
+    color: #fff;
+    line-height: 50px;
+    font-size: 18px;
+    box-shadow: 0 3px 5px 0px rgba(17, 7, 7, 0.2);
+    transition: .2s;
+}
+.redes-container ul:hover a {
+    filter: blur(2px);
+}
+.redes-container ul li a:hover {
+    transform: translateY(-3px) scale(1.05);
+    box-shadow: 0 5px 5px 0px rgba(17, 7, 7, 0.4);
+    filter: none;
+}
+.redes-container ul li .linkedin:hover {
+    background: #00aae4 ;
+}
+.redes-container ul li .github:hover {
+    background: #000 ;
+}
+.redes-container ul li .gmail:hover {
+    background: 	#FF0000 ;
+}
+li{
+    list-style-type: none;
+}
+
+.size {
+    font-size: 3rem;
+}
+.navbar-toggler {
+    color: white;
+}
+
+.imgtitle{
+    width: 20rem;
+}
+
+footer{
+  position: relative;
+  bottom: 22rem;;
+}
+.footertext{
+    margin-top: 7rem;
+}
