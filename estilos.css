@@ -95,6 +95,7 @@ header,
     margin-top: 1rem;
 }
 
+
 .redes-container {
     margin: 0;
     padding: 0;
@@ -107,6 +108,7 @@ header,
     justify-content: center;
     
 }
+
 .redes-container ul li {
     display: inline-block;
     margin: 0 5px;
@@ -162,4 +164,10 @@ footer{
 }
 .footertext{
     margin-top: 7rem;
+    
+}
+.footercontact{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
