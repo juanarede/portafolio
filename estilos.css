@@ -2,7 +2,9 @@ body {
     font-family: 'Oswald', sans-serif;
     background-color: black;   
 }
-
+html{
+    overflow-x: hidden;
+  }
   
 .view {
     background: url("./img/thumb-1920-238870.jpg") no-repeat center center;
